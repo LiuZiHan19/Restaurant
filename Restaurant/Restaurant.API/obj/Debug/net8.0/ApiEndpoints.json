@@ -17,17 +17,53 @@
         ],
         "StatusCode": 200
       }
+    ]
+  },
+  {
+    "ContainingType": "Restaurant.API.Controllers.WeatherForecastController",
+    "Method": "Hello",
+    "RelativePath": "api/WeatherForecast",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "Restaurant.API.Controllers.WeatherForecastController",
     "Method": "Get",
-    "RelativePath": "api/WeatherForecast/Ex",
-    "HttpMethod": "",
+    "RelativePath": "api/WeatherForecast/{take}/example",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "max",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.IEnumerable\u00601[[Restaurant.API.WeatherForecast, Restaurant.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",

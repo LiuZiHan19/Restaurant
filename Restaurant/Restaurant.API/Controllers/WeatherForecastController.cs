@@ -16,11 +16,24 @@ namespace Restaurant.API.Controllers
             _weatherForecastService = weatherForecastService;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
-        [Route("Ex")]
+        [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
             return _weatherForecastService.Get();
+        }
+
+        [HttpGet]
+        [Route("{take}/example")]
+        public IEnumerable<WeatherForecast> Get([FromQuery] int max, [FromRoute] int take)
+        {
+            var result = _weatherForecastService.Get();
+            return result;
+        }
+
+        [HttpPost]
+        public string Hello([FromBody] string name)
+        {
+            return $"Hello {name}";
         }
     }
 }
