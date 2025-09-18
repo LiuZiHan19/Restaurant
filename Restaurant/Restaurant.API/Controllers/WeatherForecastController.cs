@@ -23,6 +23,14 @@ namespace Restaurant.API.Controllers
         }
 
         [HttpGet]
+        [Route("statuscode")]
+        public ObjectResult Get([FromQuery] int code)
+        {
+            // Response.StatusCode = 200;
+            return StatusCode(code, _weatherForecastService.Get());
+        }
+
+        [HttpGet]
         [Route("{take}/example")]
         public IEnumerable<WeatherForecast> Get([FromQuery] int max, [FromRoute] int take)
         {

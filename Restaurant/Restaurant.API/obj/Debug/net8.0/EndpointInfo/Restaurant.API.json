@@ -89,6 +89,28 @@
         }
       }
     },
+    "/api/WeatherForecast/statuscode": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/WeatherForecast/{take}/example": {
       "get": {
         "tags": [

@@ -14,3 +14,7 @@ Content-Type: application/json
 "LiuZiHan"
 
 ###
+
+GET {{Restaurant.API_HostAddress}}/api/weatherforecast/statuscode?code=400
+
+###
