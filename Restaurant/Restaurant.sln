@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36327.8 d17.14
+VisualStudioVersion = 17.14.36327.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.API", "Restaurant.API\Restaurant.API.csproj", "{2C534BFD-7A12-45A6-A3E8-D9EF3278532E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.Domain", "Restaurant.Domain\Restaurant.Domain.csproj", "{30D576CD-DC00-4155-990A-B48DA84E9DB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.Application", "Restaurant.Application\Restaurant.Application.csproj", "{F2F8DA3C-E803-4499-8B36-F31FEFE8538E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.Infrastructure", "Restaurant.Infrastructure\Restaurant.Infrastructure.csproj", "{74000BDE-6069-4AFF-9584-17EE5006D0FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{2C534BFD-7A12-45A6-A3E8-D9EF3278532E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C534BFD-7A12-45A6-A3E8-D9EF3278532E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C534BFD-7A12-45A6-A3E8-D9EF3278532E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D576CD-DC00-4155-990A-B48DA84E9DB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D576CD-DC00-4155-990A-B48DA84E9DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D576CD-DC00-4155-990A-B48DA84E9DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D576CD-DC00-4155-990A-B48DA84E9DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2F8DA3C-E803-4499-8B36-F31FEFE8538E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2F8DA3C-E803-4499-8B36-F31FEFE8538E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2F8DA3C-E803-4499-8B36-F31FEFE8538E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2F8DA3C-E803-4499-8B36-F31FEFE8538E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74000BDE-6069-4AFF-9584-17EE5006D0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74000BDE-6069-4AFF-9584-17EE5006D0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74000BDE-6069-4AFF-9584-17EE5006D0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74000BDE-6069-4AFF-9584-17EE5006D0FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
